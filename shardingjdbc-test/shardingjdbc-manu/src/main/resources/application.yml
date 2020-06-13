@@ -1,0 +1,47 @@
+server:
+   servlet:
+      context-path: /
+   port: 8080
+
+
+
+sharding:
+   ds0:  #data source0
+      type: com.alibaba.druid.pool.DruidDataSource
+      jdbcUrl: jdbc:mysql://localhost:3306/sharding1?serverTimezone=GMT%2B8&useSSL=false
+      username: root
+      password: 1020
+   ds1:  #data source1
+      type: com.alibaba.druid.pool.DruidDataSource
+      jdbcUrl: jdbc:mysql://localhost:3306/sharding2?serverTimezone=GMT%2B8&useSSL=false
+      username: root
+      password: 1020
+   
+
+#sql日志
+logging.level.com.hyc.dao: debug
+ 
+#actuator端口
+management:
+   server:
+      port: 9001
+   endpoints:
+      web:
+         exposure:
+            include: '*'  #开放所有页面节点  默认只开启了health、info两个节点
+      health:
+         show-details: always  #显示健康具体信息  默认不会显示详细信息
+ 
+snow:
+   work:
+      id: 1
+   datacenter: 
+      id: 2
+ 
+mybatis:
+   configuration:
+      map-underscore-to-camel-case: true
+   type-aliases-package: org.shardingjdbc.starter.entity
+   mapper-locations: classpath:mapper/*.xml
+
+

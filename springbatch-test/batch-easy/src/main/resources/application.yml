@@ -1,0 +1,16 @@
+server:
+   port: 8080
+spring:
+   batch:
+      job:
+         enabled: false # job不随着项目的启动而执行
+   datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
+      username: root
+      password: 1020
+   
+logging:
+   level:
+      org:
+         springframework: INFO #WARN

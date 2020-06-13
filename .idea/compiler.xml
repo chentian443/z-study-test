@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mq-producer" />
+        <module name="elasticsearch-test" />
+        <module name="transaction-test" />
+        <module name="nettystudy-first" />
+        <module name="batch-easy" />
+        <module name="hdfs-filesystem" />
+        <module name="kafka-demo" />
+        <module name="avro-test" />
+        <module name="redis-test" />
+        <module name="mq-consumer" />
+        <module name="shardingjdbc-manu" />
+        <module name="websocket-second" />
+        <module name="websocket-demo" />
+        <module name="shiro-test" />
+        <module name="guava-test" />
+        <module name="oauth2-demo" />
+        <module name="springevent-test" />
+        <module name="webflux-test" />
+        <module name="shardingjdbc-starter" />
+        <module name="quartz-test" />
+        <module name="mapreduce-study" />
+        <module name="batch-first" />
+        <module name="solr-test" />
+        <module name="mongodb-test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="avro-test" target="1.8" />
+      <module name="batch-easy" target="1.8" />
+      <module name="batch-first" target="1.8" />
+      <module name="elasticsearch-test" target="1.8" />
+      <module name="guava-test" target="1.8" />
+      <module name="hadoop-test" target="1.8" />
+      <module name="hdfs-filesystem" target="1.8" />
+      <module name="kafka-demo" target="1.8" />
+      <module name="kafka-test" target="1.8" />
+      <module name="mapreduce-study" target="1.8" />
+      <module name="mongodb-test" target="1.8" />
+      <module name="mq-consumer" target="1.8" />
+      <module name="mq-producer" target="1.8" />
+      <module name="netty-test" target="1.8" />
+      <module name="nettystudy-first" target="1.8" />
+      <module name="oauth2-demo" target="1.8" />
+      <module name="quartz-test" target="1.8" />
+      <module name="rabbitmq-test" target="1.8" />
+      <module name="redis-test" target="1.8" />
+      <module name="security-test" target="1.8" />
+      <module name="shardingjdbc-manu" target="1.8" />
+      <module name="shardingjdbc-starter" target="1.8" />
+      <module name="shardingjdbc-test" target="1.8" />
+      <module name="shiro-test" target="1.8" />
+      <module name="solr-test" target="1.8" />
+      <module name="springbatch-test" target="1.8" />
+      <module name="springboot-solr-test" target="1.8" />
+      <module name="springevent-test" target="1.8" />
+      <module name="transaction-test" target="1.8" />
+      <module name="webflux-test" target="1.8" />
+      <module name="websocket-demo" target="1.8" />
+      <module name="websocket-second" target="1.8" />
+      <module name="websocket-test" target="1.8" />
+      <module name="z-study-test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="avro-test" options="-parameters" />
+      <module name="batch-easy" options="-parameters" />
+      <module name="batch-first" options="-parameters" />
+      <module name="elasticsearch-test" options="-parameters" />
+      <module name="guava-test" options="-parameters" />
+      <module name="hdfs-filesystem" options="-parameters" />
+      <module name="kafka-demo" options="-parameters" />
+      <module name="mapreduce-study" options="-parameters" />
+      <module name="mongodb-test" options="-parameters" />
+      <module name="mq-consumer" options="-parameters" />
+      <module name="mq-producer" options="-parameters" />
+      <module name="nettystudy-first" options="-parameters" />
+      <module name="oauth2-demo" options="-parameters" />
+      <module name="quartz-test" options="-parameters" />
+      <module name="redis-test" options="-parameters" />
+      <module name="shardingjdbc-manu" options="-parameters" />
+      <module name="shardingjdbc-starter" options="-parameters" />
+      <module name="shiro-test" options="-parameters" />
+      <module name="solr-test" options="-parameters" />
+      <module name="springbatch-test" options="-parameters" />
+      <module name="springboot-solr-test" options="-parameters" />
+      <module name="springevent-test" options="-parameters" />
+      <module name="transaction-test" options="-parameters" />
+      <module name="webflux-test" options="-parameters" />
+      <module name="websocket-demo" options="-parameters" />
+      <module name="websocket-second" options="-parameters" />
+    </option>
+  </component>
+</project>

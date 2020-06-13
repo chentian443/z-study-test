@@ -1,0 +1,13 @@
+server:
+   port: 8080
+
+spring:
+   data:
+      mongodb:
+         uri: mongodb://localhost:27017/test
+   
+# 使用logback打印日志   
+logging:
+   level:
+      org.redis.test: debug
+   

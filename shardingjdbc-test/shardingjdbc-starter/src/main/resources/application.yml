@@ -1,0 +1,96 @@
+server:
+   servlet:
+      context-path: /
+   port: 8081
+sharding:
+   jdbc:
+      datasource:
+         names: ds0,ds1
+         ds0:
+            type: com.alibaba.druid.pool.DruidDataSource
+            driver-class-name: com.mysql.jdbc.Driver
+            url: jdbc:mysql://localhost:3306/sharding1?serverTimezone=GMT%2B8&useSSL=false
+            username: root
+            password: 1020
+         ds1:
+            type: com.alibaba.druid.pool.DruidDataSource
+            driver-class-name: com.mysql.jdbc.Driver
+            url: jdbc:mysql://localhost:3306/sharding2?serverTimezone=GMT%2B8&useSSL=false
+            username: root
+            password: 1020
+      config:
+         sharding:
+            default-database-strategy:
+               standard:
+                  sharding-column: user_id
+                  precise-algorithm-class-name: org.shardingjdbc.starter.util.IdShardingAlgorithm
+            props:
+               sql.show: true
+            tables:
+               t_user: #t_user表
+                  key-generator-column-name: user_id #主键
+                  key-generator-class-name: org.shardingjdbc.starter.config.SnowflakeKeyGenerator
+                  actual-data-nodes: ds$->{0..1}.t_user_$->{0..1} #数据节点
+                  
+                  table-strategy: #分表策略
+                     inline:
+                        shardingColumn: gender
+                        #  双引号与单引号的区别：双引号会保留语义，如转义字符\仍然有效；单引号则直接转换为字符串；有点类似于linux哦
+                        algorithm-expression: "t_user_$->{gender == 1 ? 0 : 1}"
+               t_user_address:
+                  key-generator-column-name: address_id
+                  key-generator-class-name: org.shardingjdbc.starter.config.SnowflakeKeyGenerator
+                  actual-data-nodes: ds$->{0..1}.t_user_address_$->{0..1}
+                  
+                  table-strategy: #分表策略
+                     inline:
+                        shardingColumn: gender
+                        algorithm-expression: "t_user_address_$->{gender == 1 ? 0 : 1}"
+               t_order: #t_order表
+                  key-generator-column-name: order_id #主键
+                  key-generator-class-name: org.shardingjdbc.starter.config.SnowflakeKeyGenerator
+                  actual-data-nodes: ds$->{0..1}.t_order_$->{0..1} #数据节点
+                  
+                  table-strategy: #分表策略
+                     inline:
+                        shardingColumn: order_id
+                        algorithm-expression: t_order_$->{order_id % 2}
+               t_order_item:
+                  key-generator-column-name: order_item_id
+                  key-generator-class-name: org.shardingjdbc.starter.config.SnowflakeKeyGenerator
+                  actual-data-nodes: ds$->{0..1}.t_order_item_$->{0..1}
+                  
+                  table-strategy: #分表策略
+                     inline:
+                        shardingColumn: order_id
+                        algorithm-expression: t_order_item_$->{order_id % 2}     
+               binding-tables: 
+                  - t_user,t_user_address
+                  - t_order,t_order_item
+               broadcast-tables: 
+                  - t_product
+               
+                     
+#sql日志
+logging.level.com.hyc.dao: debug
+#actuator端口
+management:
+   server:
+      port: 9001
+   endpoints:
+      web:
+         exposure:
+            include: '*' #开放所有页面节点  默认只开启了health、info两个节点
+      health:
+         show-details: always #显示健康具体信息  默认不会显示详细信息
+snow:
+   work:
+      id: 1
+   datacenter:
+      id: 2
+mybatis:
+   configuration:
+      map-underscore-to-camel-case: true
+   type-aliases-package: org.shardingjdbc.starter.entity
+   mapper-locations: classpath:mapper/*.xml
+   

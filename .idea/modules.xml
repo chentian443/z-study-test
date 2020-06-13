@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hadoop-test/avro-test/avro-test.iml" filepath="$PROJECT_DIR$/hadoop-test/avro-test/avro-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbatch-test/batch-easy/batch-easy.iml" filepath="$PROJECT_DIR$/springbatch-test/batch-easy/batch-easy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbatch-test/batch-first/batch-first.iml" filepath="$PROJECT_DIR$/springbatch-test/batch-first/batch-first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch-test/elasticsearch-test.iml" filepath="$PROJECT_DIR$/elasticsearch-test/elasticsearch-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guava-test/guava-test.iml" filepath="$PROJECT_DIR$/guava-test/guava-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hadoop-test/hadoop-test.iml" filepath="$PROJECT_DIR$/hadoop-test/hadoop-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hadoop-test/hdfs-filesystem/hdfs-filesystem.iml" filepath="$PROJECT_DIR$/hadoop-test/hdfs-filesystem/hdfs-filesystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-test/kafka-demo/kafka-demo.iml" filepath="$PROJECT_DIR$/kafka-test/kafka-demo/kafka-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-test/kafka-test.iml" filepath="$PROJECT_DIR$/kafka-test/kafka-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hadoop-test/mapreduce-study/mapreduce-study.iml" filepath="$PROJECT_DIR$/hadoop-test/mapreduce-study/mapreduce-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mongodb-test/mongodb-test.iml" filepath="$PROJECT_DIR$/mongodb-test/mongodb-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-test/mq-consumer/mq-consumer.iml" filepath="$PROJECT_DIR$/rabbitmq-test/mq-consumer/mq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-test/mq-producer/mq-producer.iml" filepath="$PROJECT_DIR$/rabbitmq-test/mq-producer/mq-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-test/netty-test.iml" filepath="$PROJECT_DIR$/netty-test/netty-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-test/nettystudy-first/nettystudy-first.iml" filepath="$PROJECT_DIR$/netty-test/nettystudy-first/nettystudy-first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security-test/oauth2-demo/oauth2-demo.iml" filepath="$PROJECT_DIR$/security-test/oauth2-demo/oauth2-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quartz-test/quartz-test.iml" filepath="$PROJECT_DIR$/quartz-test/quartz-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-test/rabbitmq-test.iml" filepath="$PROJECT_DIR$/rabbitmq-test/rabbitmq-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis-test/redis-test.iml" filepath="$PROJECT_DIR$/redis-test/redis-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security-test/security-test.iml" filepath="$PROJECT_DIR$/security-test/security-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shardingjdbc-test/shardingjdbc-manu/shardingjdbc-manu.iml" filepath="$PROJECT_DIR$/shardingjdbc-test/shardingjdbc-manu/shardingjdbc-manu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shardingjdbc-test/shardingjdbc-starter/shardingjdbc-starter.iml" filepath="$PROJECT_DIR$/shardingjdbc-test/shardingjdbc-starter/shardingjdbc-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shardingjdbc-test/shardingjdbc-test.iml" filepath="$PROJECT_DIR$/shardingjdbc-test/shardingjdbc-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro-test/shiro-test.iml" filepath="$PROJECT_DIR$/shiro-test/shiro-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/solr-test/solr-test.iml" filepath="$PROJECT_DIR$/solr-test/solr-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbatch-test/springbatch-test.iml" filepath="$PROJECT_DIR$/springbatch-test/springbatch-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springevent-test/springevent-test.iml" filepath="$PROJECT_DIR$/springevent-test/springevent-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transaction-test/transaction-test.iml" filepath="$PROJECT_DIR$/transaction-test/transaction-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webflux-test/webflux-test.iml" filepath="$PROJECT_DIR$/webflux-test/webflux-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket-test/websocket-demo/websocket-demo.iml" filepath="$PROJECT_DIR$/websocket-test/websocket-demo/websocket-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket-test/websocket-second/websocket-second.iml" filepath="$PROJECT_DIR$/websocket-test/websocket-second/websocket-second.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket-test/websocket-test.iml" filepath="$PROJECT_DIR$/websocket-test/websocket-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/z-study-test.iml" filepath="$PROJECT_DIR$/z-study-test.iml" />
+    </modules>
+  </component>
+</project>

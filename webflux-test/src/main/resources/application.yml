@@ -1,0 +1,8 @@
+server:
+   port: 8080
+         
+# 使用logback打印日志   
+logging:
+   level:
+      org.redis.test: debug
+   

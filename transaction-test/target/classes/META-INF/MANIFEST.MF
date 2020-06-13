@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: transaction-test
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: chent
+Implementation-Vendor-Id: cn.ming.tian
+Build-Jdk: 1.8.0_101
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/z-study-test/transaction-test
+Created-By: Maven Integration for Eclipse
+

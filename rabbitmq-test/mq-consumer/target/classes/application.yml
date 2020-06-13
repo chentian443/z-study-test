@@ -1,0 +1,28 @@
+## springboot整合rabbitmq的基本配置
+spring:
+   rabbitmq:
+      addresses: 10.0.209.73:5672
+      username: rabbitadmin
+      password: 123456
+      virtual-host: /
+## 消费端配置
+      listener:
+         simple:
+            concurrency: 5
+            ## AcknowledgeMode包括三种模式，manual:手动确认；none:不确认；auto:自动确认
+            acknowledge-mode: manual # 开启消费者端的确认机制（手动）
+            max-concurrency: 10
+            prefetch: 1
+   
+   datasource:
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 1020
+      driverClassName: com.mysql.jdbc.Driver
+
+server:
+   port: 8002
+   servlet:
+      context-path: /
+    
+    

@@ -1,0 +1,14 @@
+server:
+   port: 8080
+
+spring:
+   data:
+      elasticsearch:
+         cluster-name: my-application
+         cluster-nodes: localhost:9300
+         
+# 使用logback打印日志   
+logging:
+   level:
+      org.redis.test: debug
+   

@@ -1,0 +1,36 @@
+quartz:
+   scheduler-factory-bean:
+      quartz-properties:
+         org:
+            quartz:
+               # scheduler部分
+               scheduler:
+                  instanceName: DefaultQuartzScheduler
+                  rmi.export: false
+                  rmi.proxy: false
+                  wrapJobExecutionInUserTransaction: false
+                  instanceId: AUTO
+               # 实例化ThreadPool时，使用的线程类为SimpleThreadPool
+               threadPool:
+                  class: org.quartz.simpl.SimpleThreadPool
+                  threadCount: 5
+                  threadPriority: 5
+                  threadsInheritContextClassLoaderOfInitializingThread: true
+               # 存储部分
+               jobStore:
+                  misfireThreshold: 5000
+                  class: org.quartz.impl.jdbcjobstore.JobStoreTX
+                  driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+                  useProperties: true
+                  isClustered: true
+                  tablePrefix: QRTZ_
+                  dataSource: qzDS
+               # 对应datasource的配置
+               dataSource:
+                  qzDS:
+                     provider: hikaricp
+                     driver: oracle.jdbc.OracleDriver
+                     URL: jdbc:oracle:thin:@localhost:1521:orcl
+                     user: pms
+                     password: 1020
+                     maxConnections: 10
